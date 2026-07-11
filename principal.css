@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+
+    h3 {
+        animation: fadeIn 1s ease forwards;
+    }
+    #textos {
+        animation: fadeIn 1s ease forwards;
+        animation-delay: 0.3s;
+        opacity: 0;
+    }
+    div#audio {
+        animation: fadeIn 1s ease forwards;
+        animation-delay: 0.6s;
+        opacity: 0;
+    }
+    div#botoes {
+        animation: fadeIn 1s ease forwards;
+        animation-delay: 0.9s;
+        opacity: 0;
+    }
+    
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: #FBDBD7;
+    font-family: cursive sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #cf3961;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+h3{
+    color: #e2597e;
+}
+
+
+img{
+    width: 220px;
+}
+
+div#patrick{
+    margin-top: 70px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.container{
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-family: cursive sans-serif;
+}
+
+#flores0 img {
+    width: 150px;
+}
+
+div#flores{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scaleX(-1);
+}
+
+div#flores2 {
+    position: absolute;
+    top: 0;
+}
+
+div#textos{
+    text-align: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-family: cursive sans-serif;
+    font-size: 1.1em;
+    padding: 10px 70px 10px 70px;
+    border-radius: 30px 30px 30px 30px;
+    transition: 0.2s;
+    box-sizing: border-box;
+    
+}
+
+a:hover{
+    transform: scale(1.06);
+    box-shadow: 0px 4px 10px rgb(218, 140, 158);
+}
+
+div#botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 24px;
+}
+
+div#botoes a{
+    transition: 0.3s;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px rgb(218, 140, 158)
+}
+
+div#botoes a:hover{
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px rgb(216, 65, 100);
+}
+
+#escuro{
+    background-color: #d15f78;
+    box-shadow: 0px 4px 10px rgb(218, 140, 158);
+    transition: 0.4s;
+}
+
+#claro{
+    background-color: #FEC0CB;
+    box-shadow: 0px 4px 10px rgba(185, 130, 144, 0.486);
+}
+
+
+div#conteudo{
+    margin-top: 55px;
+}
+
+div#audio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    padding: 40px;
+}
+
+#btnPlay{
+    background-color: #df456e;
+    color: #ffffff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-family: cursive sans-serif;
+    font-weight: bolder;
+    font-size: 1em;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(185, 130, 144, 0.486);
+    transition: transform 0.15s ease, background-color 0.3s ease;
+}
+
+#btnPlay:hover{
+    transform: scale(1.05);
+}
+
+#btnPlay:active {
+    transform: scale(0.92) ;
+
+}
+
+#btnPlay span {
+    transition: opacity 0.2s ease;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color:#FEC0CB;
+    color:#df456e;
+}
